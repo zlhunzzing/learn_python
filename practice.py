@@ -21,3 +21,7 @@ print("우리집 강아지의 이름은 " + name + "에요")
 name = animal
 print(name, "의 나이는 " + str(age), "살이에요")
 print("뽀미는 3살인가요?" + str(is_adult))
+
+'''
+주석이다
+'''
