@@ -43,3 +43,18 @@ print (not(1 == 3)) # True
 print ((3 > 0) and (3 < 5)) # True
 print ((3 > 0) or (3 < 5)) # True
 print (5 > 4 > 7) # False
+
+# 숫자처리함수 abs pow max min round
+
+from math import *
+print(floor(4.99)) # 내림
+print(ceil(3.99)) # 올림
+print(sqrt(16)) # 제곱근
+
+from random import *
+
+print(random()) # 0.0 ~ 1.0
+print(random() * 10 ) # 0.0 ~ 10.0
+print(int(random() * 10)) # 0 ~ 10
+print(randrange(1, 50)) # 1 ~ 50 미만
+print(randint(1, 50)) # 1 ~ 50 이하
