@@ -59,32 +59,34 @@
 # print(randrange(1, 50)) # 1 ~ 50 미만
 # print(randint(1, 50)) # 1 ~ 50 이하
 
-# 문자열 '' "" 줄바꿈 [0]슬라이싱
-sentence = """
-아녕하세요 요요요
-요요요요ㅛㅇ
-요요
-"""
-jihun = "김지훈"
-print(jihun[0:2]) # 2 전까지
-print(jihun[:2]) # 맨 처음부터
-print(jihun[2:])
-print(jihun[-2:]) # 뒤에서
+# # 문자열 '' "" 줄바꿈 [0]슬라이싱
+# sentence = """
+# 아녕하세요 요요요
+# 요요요요ㅛㅇ
+# 요요
+# """
+# jihun = "김지훈"
+# print(jihun[0:2]) # 2 전까지
+# print(jihun[:2]) # 맨 처음부터
+# print(jihun[2:])
+# print(jihun[-2:]) # 뒤에서
 
-# 문자열 처리함수 len lower uppper isupper replace index, find count
+# # 문자열 처리함수 len lower uppper isupper replace index, find count
 
-# 문자열 포맷 %d %s(정수도 가능) %c
+# # 문자열 포맷 %d %s(정수도 가능) %c
 
-print("나는 %d살입니다." % 20)
-print("나는 %s색과 %s색을 좋아해요." % ("파란", "빨간"))
+# print("나는 %d살입니다." % 20)
+# print("나는 %s색과 %s색을 좋아해요." % ("파란", "빨간"))
 
-print("나는 {}살입니다. 아니 {}살입니다.".format(20, 1))
-print("나는 {0}살입니다. 아니 {1}살입니다.".format(20, 1))
+# print("나는 {}살입니다. 아니 {}살입니다.".format(20, 1))
+# print("나는 {0}살입니다. 아니 {1}살입니다.".format(20, 1))
 
-print("나는 {age}살입니다. 아니 {color}색을 좋아합니다.".format(age = 20, color = "빨간"))
+# print("나는 {age}살입니다. 아니 {color}색을 좋아합니다.".format(age = 20, color = "빨간"))
 
-# (v3.6 이상~)
-age = 20
-print(f"나는 {age}살입니다")
+# # (v3.6 이상~)
+# age = 20
+# print(f"나는 {age}살입니다")
 
-# 탈출문자 \n \" \\ > \ \r 커서 이동 \b \t
+# # 탈출문자 \n \" \\ > \ \r 커서 이동 \b \t
+
+# # 슬라이싱 도중 함수사용 가능
