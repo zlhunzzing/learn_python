@@ -44,9 +44,29 @@
 
 ## 튜플
 
-menu = ("돈까스", "치즈까스")
-print(menu[0])
-print(menu[1])
+# menu = ("돈까스", "치즈까스")
+# print(menu[0])
+# print(menu[1])
 
-(name, age) = ("지훈", 17)
-print(name, age)
+# (name, age) = ("지훈", 17)
+# print(name, age)
+
+# 집합 (set)
+# 중복 안됨, 순서 없음
+my_set = {1,2,3,3,3}
+print(my_set)
+
+# 교집합
+java = {"유재석", "김태호", "양세형"}
+python = set(["유재석", "박명수"])
+print(java & python, java.intersection(python))
+
+# 합집합 (java 도 할 수 있거나 python 할 수 있는 개발자)
+print(java | python, java.union(python))
+
+# 차집합
+print(java - python, java.difference(python))
+
+# 추가 제거
+python.add("김태호")
+java.remove("김태호")
