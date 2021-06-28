@@ -53,20 +53,33 @@
 
 # 집합 (set)
 # 중복 안됨, 순서 없음
-my_set = {1,2,3,3,3}
-print(my_set)
+# my_set = {1,2,3,3,3}
+# print(my_set)
 
-# 교집합
-java = {"유재석", "김태호", "양세형"}
-python = set(["유재석", "박명수"])
-print(java & python, java.intersection(python))
+# # 교집합
+# java = {"유재석", "김태호", "양세형"}
+# python = set(["유재석", "박명수"])
+# print(java & python, java.intersection(python))
 
-# 합집합 (java 도 할 수 있거나 python 할 수 있는 개발자)
-print(java | python, java.union(python))
+# # 합집합 (java 도 할 수 있거나 python 할 수 있는 개발자)
+# print(java | python, java.union(python))
 
-# 차집합
-print(java - python, java.difference(python))
+# # 차집합
+# print(java - python, java.difference(python))
 
-# 추가 제거
-python.add("김태호")
-java.remove("김태호")
+# # 추가 제거
+# python.add("김태호")
+# java.remove("김태호")
+
+# 자료구조의 변경
+menu = {"커피", "우유"}
+print(menu, type(menu))
+
+menu = list(menu)
+print(menu, type(menu))
+
+menu = tuple(menu)
+print(menu, type(menu))
+
+menu = set(menu)
+print(menu, type(menu))
