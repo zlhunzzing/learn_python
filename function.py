@@ -2,7 +2,7 @@
 def open_account():
     print("새로운 계좌가 생성되었습니다.")
 
-open_account()
+# open_account()
 
 ## 파라미터, default parameter
 
@@ -11,4 +11,14 @@ open_account()
 def profile(name, age, main_lang):
     print(name, age, main_lang)
 
-profile(name="뽀미", main_lang="한글", age=1)
+# profile(name="뽀미", main_lang="한글", age=1)
+
+## 가변인자
+# def profile(name, age, lang1, lang2):
+def profile(name, age, *language):
+    print("이름 : {0}\t나이 : {1}\t".format(name, age), end=" ")
+    for lang in language:
+        print(lang, end=" ")
+    print()
+
+profile("김지훈", 17, "JS", "C", "SDSD")
