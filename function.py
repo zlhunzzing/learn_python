@@ -21,4 +21,16 @@ def profile(name, age, *language):
         print(lang, end=" ")
     print()
 
-profile("김지훈", 17, "JS", "C", "SDSD")
+# profile("김지훈", 17, "JS", "C", "SDSD")
+
+## 지역변수 전역변수
+
+gun = 10
+
+def checkpoint(soldiers): # 경계근무
+    global gun
+    gun = gun - soldiers
+    print("남은 총 : {0}".format(gun))
+
+print("전체 총 : {0}".format(gun))
+checkpoint(2)
