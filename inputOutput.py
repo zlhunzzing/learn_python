@@ -50,13 +50,26 @@
 # score_file.close()
 
 # 여러 줄출력
-score_file = open("score.txt", "r", encoding="utf8")
-while True:
-    line = score_file.readline()
-    if not line:
-        break
-    print(line)
-# score_file.close()
-lines = score_file.readlines() # list
-for line in lines:
-    print(line, end="")
+# score_file = open("score.txt", "r", encoding="utf8")
+# while True:
+#     line = score_file.readline()
+#     if not line:
+#         break
+#     print(line)
+# # score_file.close()
+# lines = score_file.readlines() # list
+# for line in lines:
+#     print(line, end="")
+
+## pickle
+import pickle
+# profile_file = open("profile.pickle", "wb")
+# profile = {"이름":"김지훈", "나이":17, "직업":"여고생"}
+# print(profile)
+# pickle.dump(profile, profile_file)
+# profile_file.close()
+
+profile_file = open("profile.pickle", "rb")
+profile = pickle.load(profile_file)
+print(profile)
+profile_file.close()
