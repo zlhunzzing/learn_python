@@ -14,3 +14,15 @@ class Unit:
 
 marine1 = Unit("마린", 40, 5)
 marine2 = Unit("마린", 40, 5)
+
+## 클래스 확장
+
+# 레이스 : 공중 유닛
+wraith1 = Unit("레이스", 80, 5)
+
+# # 마인드 컨트롤 : 상대방 유닛을 내 것으로
+wraith2 = Unit("빼앗은 레이스", 80, 5)
+wraith2.clocking = True
+
+if wraith2.clocking == True:
+    print("{0} 는 현재 클로킹 상태입니다.".format(wraith2.name))
