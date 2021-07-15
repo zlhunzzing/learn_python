@@ -100,10 +100,27 @@ class FlyableAttackUnit(AttackUnit, Flyable):
 ## 메소드 오버라이딩
 
 # 벌쳐 : 지상 유닛
-vulture = AttackUnit("벌쳐", 80, 10, 20)
+# vulture = AttackUnit("벌쳐", 80, 10, 20)
 
-battlecruiser = FlyableAttackUnit("배틀크루저", 500, 25, 3)
+# battlecruiser = FlyableAttackUnit("배틀크루저", 500, 25, 3)
 
-vulture.move("11시")
+# vulture.move("11시")
 # battlecruiser.fly(battlecruiser.name, "9시")
-battlecruiser.move("9시")
+# battlecruiser.move("9시")
+
+## 건물
+class BuildingUnit(Unit):
+    def __init__(self, name, hp, location):
+        pass
+
+# 서플라이 디폿 : 건물, 1개 건물 = 8개 유닛.
+supply_depot = BuildingUnit("서플라이 디폿", 500, "7시")
+
+def game_start():
+    print("[알림] 새로운 게임을 시작합니다.")
+
+def game_over():
+    pass
+
+game_start()
+game_over()
