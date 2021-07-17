@@ -111,7 +111,9 @@ class FlyableAttackUnit(AttackUnit, Flyable):
 ## 건물
 class BuildingUnit(Unit):
     def __init__(self, name, hp, location):
-        pass
+        # Unit.__init__(self, name, hp, 0)
+        super().__init__(name, hp, 0)
+        self.location = location
 
 # 서플라이 디폿 : 건물, 1개 건물 = 8개 유닛.
 supply_depot = BuildingUnit("서플라이 디폿", 500, "7시")
@@ -124,3 +126,5 @@ def game_over():
 
 game_start()
 game_over()
+
+## super: 다중상속 안됨
