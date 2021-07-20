@@ -25,15 +25,24 @@
 
 ## 사용자 정의 에러
 
-class custonError(Exception):
-    def __init__(self, msg):
-        self.msg = msg
+# class custonError(Exception):
+#     def __init__(self, msg):
+#         self.msg = msg
 
-    def __str__(self):
-        return self.msg
+#     def __str__(self):
+#         return self.msg
+
+# try:
+#     print("에러 ㄱㄱ")
+#     raise custonError("입력값 : {0}".format(input("인풋")))
+# except custonError as err:
+#     print("에러", err)
+
+## finally
+
 
 try:
     print("에러 ㄱㄱ")
-    raise custonError("입력값 : {0}".format(input("인풋")))
-except custonError as err:
-    print("에러", err)
+    raise Exception
+finally:
+    print("무적권법")
