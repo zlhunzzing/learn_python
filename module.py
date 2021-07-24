@@ -8,9 +8,13 @@
 
 ## 패키지
 
-import fruit.apple # 클래스나 함수는 직접 import X
+# import fruit.apple # 클래스나 함수는 직접 import X
 
-name = fruit.apple.ApplePackage()
-name.detail()
+# name = fruit.apple.ApplePackage()
+# name.detail()
 
 # from fruit.apple import ApplePackage // from은 클래스 import 가능
+
+from fruit import *
+name = apple.ApplePackage()
+name.detail()
