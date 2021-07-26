@@ -15,6 +15,14 @@
 
 # from fruit.apple import ApplePackage // from은 클래스 import 가능
 
-from fruit import *
-name = apple.ApplePackage()
-name.detail()
+## __all__ 
+
+# from fruit import *
+# name = apple.ApplePackage()
+# name.detail()
+
+## 모듈 위치
+import inspect
+import random
+
+print(inspect.getfile(random))
